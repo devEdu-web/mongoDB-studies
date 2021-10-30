@@ -8,8 +8,10 @@ Eu pensei em fazer esse repositŕio em inglês, além de praticá-lo ficaria no 
 
 ## Conectando ao Mongo
 
+
 1. [Preparando a conexão](./1%20-%20Conctando%20ao%20Mongo/1%20-%20preparando-a-conexao.md)
 2. [Conectando utilizando o Node](./1%20-%20Conctando%20ao%20Mongo/2%20-%20connectando.md)
+3. [Utilizando o banco de dados em outros arquivos](1%20-%20Conctando%20ao%20Mongo/3%20-%20utilizando-banco-de-dados-em-outros-arquivos.md)
 
 
 ## Operações Crud
