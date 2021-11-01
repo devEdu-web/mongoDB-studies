@@ -52,3 +52,20 @@ db.collection("your_collection").deleteMany(query)
 const result = await db.collection("your_collecion").deleteMany(query)
 console.log(result)
 ```
+
+## Apagando todos os documentos de uma collection
+
+Para realizar essa operação, podemos utilizar o `deleteMany()`, mas por razões de performance é aconselhável que se utilize o `drop()`.
+
+```javascript
+import * as database from './database.js'
+const db = database.getDb()
+
+db.collection("your_collection").drop()
+.then(result => {
+    console.log(result)
+})
+.catch(err => console.log(err))
+```
+
+Dessa forma você irá dropar a collection, ***removendo-a permanentemente do seu banco de dados***.
