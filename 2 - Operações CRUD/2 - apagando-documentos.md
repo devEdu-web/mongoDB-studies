@@ -15,7 +15,7 @@ const doc = {
     }
 }
 
-db.collection.deleteOne(doc)
+db.collection("your_collection").deleteOne(doc)
 .then(result => {
     console.log(result)
 })
@@ -23,7 +23,7 @@ db.collection.deleteOne(doc)
 
 // Podemos utilizar o await
 
-const result = await db.collection.deleteOne()
+const result = await db.collection("your_collection").deleteOne()
 console.log(result)
 ```
 > Obs: Se você não entendeu as especificações passadas para o objeto `doc`, entraremos em mais detalhes no final desse arquivo.

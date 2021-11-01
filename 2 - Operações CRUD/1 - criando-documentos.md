@@ -54,7 +54,7 @@ const docs = [
     {name: 'documento4'}
 ]
 
-db.collection.insertMany(docs)
+db.collection('your_collection').insertMany(docs)
 .then(result) => {
     console.log(`Documento com o id ${result.insertedId} adicionado com sucesso`)
 }
@@ -63,7 +63,7 @@ db.collection.insertMany(docs)
 // Podemos inserir usando o código acima
 // Ou usando esse abaixo:
 
-const result = await db.collection.insertMany(docs)
+const result = await db.collection('your_collection').insertMany(docs)
 const insertedId = result.insertedId
 console.log(`Documento com o id ${result.insertedId adicionado com sucesso`)
 ```
@@ -84,7 +84,7 @@ try {
         // Vemos que temos dois id's "1".
     ]
 
-    const result = await collection.insertMany(docs)
+    const result = await collection("your_collection").insertMany(docs)
     let ids = result.insertedIds
 
     for(let id of Object.values(ids) {
