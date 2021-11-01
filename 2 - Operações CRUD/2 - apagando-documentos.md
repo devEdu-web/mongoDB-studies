@@ -69,3 +69,7 @@ db.collection("your_collection").drop()
 ```
 
 Dessa forma você irá dropar a collection, ***removendo-a permanentemente do seu banco de dados***.
+
+***
+
+[Clique aqui para ver os seletores queries para filtrar suas buscas ao deletar, atualizar ou buscar um documento](3%20-%20seletores-querie.md)
