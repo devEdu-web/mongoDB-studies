@@ -1,4 +1,4 @@
-# 2.3 Seletores Queries para buscas no banco de dados
+# 2.4 Seletores Queries para buscas no banco de dados
 
 ## Comparação
 
