@@ -46,3 +46,12 @@
 ***
 
 ## Array
+
+| Name          | Description                                                                            |
+| ------------- | -------------------------------------------------------------------------------------- |
+| `$all`        | Retorna os documentos que contém todos os elementos especificados.              |
+| `$elemMatch`  | Retorna os documentos em que um elemento do array atende as condições especificadas.                                                  |
+| `$size`       | Retorna os documentos em que o array é do tamanho especificado.                        |
+| `$`           | Retorna o primeiro elemento de um arrai que atende a condição passada.                         |
+
+*** 
