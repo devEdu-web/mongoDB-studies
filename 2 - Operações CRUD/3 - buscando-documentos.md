@@ -40,3 +40,32 @@ await result.forEach(e => console.log(e))
 
 // Tentei executar esse código usando Promises, mas o método find() retorna um Cursor e não uma Promise
 ```
+
+<br>
+
+## FinOne
+
+Você pode fazer uma busca por um único documento em uma colleção com método `findOne()`. Este método usa uma query para poder retornar apenas os documentos na coleção que atendem a query passada. Se você não passar uma query, será retornado todos os documentos na coleção. 
+
+É importante ressaltar que ele vai retornar apenas o primeiro documento que atende a query especificada, por exemplo, se você está buscando por uma pessoa com o nome "Carlos" e no seu banco de dados tem duas pessoas com esse nome, irá retornar somente a primeira.
+
+> Obs: Esse método retorna uma Promise, diferentemente do `find()` que retorna um Cursor.
+
+```javascript
+import * as database from './database.js'
+const db = database.getDb()
+
+const query = {title: 'documento'}
+
+db.collection('your_collection').findOne(query)
+.then(documento => {
+    console.log(documento)
+})
+.catch(err => console.log(err))
+
+// Utilizando await
+
+const result = await db.collection('your_collection').findOne(query)
+
+console.log(result)
+```
