@@ -43,7 +43,7 @@ await result.forEach(e => console.log(e))
 
 <br>
 
-## FinOne
+## FindOne
 
 Você pode fazer uma busca por um único documento em uma colleção com método `findOne()`. Este método usa uma query para poder retornar apenas os documentos na coleção que atendem a query passada. Se você não passar uma query, será retornado todos os documentos na coleção. 
 
