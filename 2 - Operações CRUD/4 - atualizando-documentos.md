@@ -47,5 +47,37 @@ const result = await db.collection('your_collection').updateOne(
 )
 
 console.log(result)
+```
 
+<br>
+
+## updateMany
+
+Esse método irá atualizar todos os documentos que atender as especificações que você passar.
+
+```javascript
+import * as database from './database.js'
+const db = database.getDb()
+
+db.collection('your_collection').updateMany(
+    {nome: 'documento'},
+
+    {
+        $set: {nome: 'mudado'}
+    }
+)
+.then(result => console.log(result))
+.catch(err => console.log(err))
+
+// Utilizando await
+
+const result = await db.collection('your_collection').updateMany(
+    {nome: 'documento'},
+
+    {
+        $set: {nome: 'mudado'}
+    }
+)
+
+console.log(result)
 ```
