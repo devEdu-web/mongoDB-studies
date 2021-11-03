@@ -81,3 +81,41 @@ const result = await db.collection('your_collection').updateMany(
 
 console.log(result)
 ```
+
+<br>
+
+## replaceOne()
+
+Esse método é utilizado para substituir um documento de uma coleção, por outro documento.
+
+```javascript
+import * as database from './database.js'
+const db = database.getDb()
+
+db.collection('your_collection').replaceOne(
+    {nome: 'documento'}, // substitui o primeiro documento com o nome = 'documento'
+
+    {
+        nome: 'documento-mudade',
+        type: 'string',
+        isDocument: true
+    }
+)
+.then(result => console.log(result))
+.catch(console.log(result))
+
+// Utilizando await
+
+const result = await db.collection('your_collection').replaceOne(
+    {nome: 'documento'}, // substitui o primeiro documento com o nome = 'documento'
+
+    {
+        nome: 'documento-mudade',
+        type: 'string',
+        isDocument: true
+    }
+)
+
+console.log(result)
+
+```
