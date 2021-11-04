@@ -7,6 +7,8 @@ Antes de apresentar alguns exemplos, vou criar um background para ficar mais fá
 { _id: 3, item: { name: "ij", code: "456" }, qty: 25, tags: [ "A", "B" ] }
 { _id: 4, item: { name: "xy", code: "456" }, qty: 30, tags: [ "B", "A" ] }
 { _id: 5, item: { name: "mn", code: "000" }, qty: 20, tags: [ [ "A", "B" ], "C" ] }
+{ _id: 5, item: { name: "caramba", code: "000" }, qty: 20, tags: [ [ "A", "B" ], "C" ] }
+{ _id: 5, item: { name: "nossa", code: "000" }, qty: 20, tags: [ [ "A", "B" ], "C" ] }
 ```
 
 > Obs: Apesar de grande parte dos exemplos estarem utilizando métodos de busca (find), você pode usar esses operadores para atualizar ou deletar documentos do seu banco de dados.
@@ -74,7 +76,12 @@ Buscando documentos
 db.collection('inventory').find( { qty: { $in: [ 15, 20 ] } } )
 // Retorna os documentos em que a quantidade é igual a 15 ou 20
 ```
+Usando expressões
+```javascript
+db.collection('inventory').find( { name: { $in: [ /^ca/, /^no/ ] } } )
 
+// Retorna os documentos que o name possui uma string que começa com "ca" ou "no", ou que contem um arrei onde pelo menos um elemento começa com essas strings
+```
 ***
 
 ### $lt
