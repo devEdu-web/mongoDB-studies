@@ -37,3 +37,6 @@ Eu pensei em fazer esse repositŕio em inglês, além de praticá-lo ficaria no 
    2. [Apagando documentos](2%20-%20Operações%20CRUD/2%20-%20apagando-documentos.md)
    3. [Atualizando documentos](2%20-%20Operações%20CRUD/4%20-%20atualizando-documentos.md)
       1. [Operadores de atualização](2%20-%20Operações%20CRUD/6%20-%20operadores-de-update.md)
+3. Exemplos de operadores/seletores para filtar e atualizar documentos
+   1. [Seletores de comparação](3%20-%20Exemplos%20de%20código/1%20-%20uso-de-seletores-query-comparacao.md)
+   2. [Seletores lógicos](3%20-%20Exemplos%20de%20código/2%20-%20uso-de-seletores-qury-comparacao.md)
