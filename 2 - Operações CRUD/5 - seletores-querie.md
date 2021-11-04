@@ -55,3 +55,11 @@
 | `$`           | Retorna o primeiro elemento de um arrai que atende a condição passada.                         |
 
 *** 
+
+Agora que os conceitos estão estabelecisos, veja alguns exemplos.
+
+[Comparação](../3%20-%20Exemplos%20de%20código/1%20-%20uso-de-seletores-query-comparacao.md)
+
+
+
+[Lógicos]([../3%20-%20Exemplos%20de%20código/2%20-%20uso-de-seletores-qury-lógicos.md])

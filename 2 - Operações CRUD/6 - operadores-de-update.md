@@ -11,3 +11,8 @@
 | `$set`         | Define o valor de um campo em um documento.        |
 | `$setOnInsert` | Define o valor de um campo se uma atualização resultar na inserção de um documento. Não possui efeito em operações que modifica documentos existentes.        |
 | `$unset`         | Remove o campo especificado de um documento.       |
+
+
+***
+
+Agora que os conceitos estão escabelecidos, [veja alguns exemplos](../3%20-%20Exemplos%20de%20código/3%20-%20uso-de-operadores-update.md).
