@@ -15,7 +15,7 @@ Essas formas de busca de dados serão abordados mais adiante.
 
 O método `find()` é chamado no método `collection`. Este método aceita uma descrição (query) que lhe permite especificar os documentos que está buscando. **Para ver mais sobre os seletores para especificar os documentos que deseja buscar, clique [aqui](4%20-%20seletores-querie.md)**.
 
-O método `find()` retorna uma Promise, que se vocẽ resolver, terá acesso a referência ao `Cursor`, com esse Cursor você poderá navegar nos documentos buscados.
+O método `find()` retorna um `Cursor`, com esse Cursor você poderá navegar nos documentos buscados.
 
 
 > O `find()` busca múltiplos documentos, sendo possível especificá-los através de queries.
